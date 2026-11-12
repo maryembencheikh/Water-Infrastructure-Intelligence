@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# CatBoost
+catboost_info/
+
+# Environment variables
+.env
+
+# Local IDE settings
+.vscode/
+
+# Datasets
+data/
+
+# Generated artifacts (keep production model)
+artifacts/*
+!artifacts/best_lgbm_pipeline_compatible.joblib
