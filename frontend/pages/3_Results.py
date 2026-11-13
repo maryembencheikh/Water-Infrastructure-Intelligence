@@ -108,57 +108,20 @@ if (
 predicted_probability = probabilities[prediction]
 
 
+
 # ==================================================
 # MAIN PREDICTION CARD
 # ==================================================
 
 st.markdown("### Assessment Outcome")
 
-status_color = CLASS_COLORS[prediction]
-status_label = CLASS_LABELS[prediction]
+with st.container(border=True):
 
-st.markdown(
-    f"""
-    <div style="
-        background: white;
-        border: 1px solid #E5EBF1;
-        border-left: 6px solid {status_color};
-        border-radius: 14px;
-        padding: 25px;
-        margin: 10px 0 20px 0;
-        box-shadow: 0 3px 12px rgba(11,23,38,0.04);
-    ">
-        <div style="
-            font-size: 0.78rem;
-            color: #718096;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        ">
-            PREDICTED OPERATIONAL STATUS
-        </div>
+    st.caption("PREDICTED OPERATIONAL STATUS")
 
-        <div style="
-            font-size: 2rem;
-            font-weight: 750;
-            color: {status_color};
-            margin-top: 12px;
-        ">
-            {status_label}
-        </div>
+    st.subheader(status_label)
 
-        <div style="
-            color: #718096;
-            font-size: 0.9rem;
-            margin-top: 8px;
-        ">
-            Water Point ID: {waterpoint_id}
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
+    st.caption(f"Water Point ID: {waterpoint_id}")
 
 # ==================================================
 # KEY PERFORMANCE INDICATORS
