@@ -115,6 +115,8 @@ predicted_probability = probabilities[prediction]
 
 st.markdown("### Assessment Outcome")
 
+status_label = CLASS_LABELS[prediction]
+
 with st.container(border=True):
 
     st.caption("PREDICTED OPERATIONAL STATUS")
