@@ -1,0 +1,223 @@
+
+/* ==========================================
+   WATER INFRASTRUCTURE INTELLIGENCE
+   Global Design System
+   ========================================== */
+
+:root {
+    --navy-950: #0B1726;
+    --navy-900: #112337;
+    --navy-800: #19344A;
+    --teal-600: #0D9488;
+    --teal-500: #14B8A6;
+    --teal-100: #CCFBF1;
+
+    --surface: #FFFFFF;
+    --background: #F4F7FA;
+    --border: #E5EBF1;
+
+    --text-primary: #172B40;
+    --text-secondary: #718096;
+
+    --success: #16A36A;
+    --warning: #D99A30;
+    --danger: #DC5C5C;
+}
+
+/* Application background */
+
+.stApp {
+    background: var(--background);
+    color: var(--text-primary);
+}
+
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+.block-container {
+    max-width: 1460px;
+    padding-top: 2.2rem;
+    padding-bottom: 3rem;
+}
+
+/* Typography */
+
+html, body, [class*="css"] {
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+h1, h2, h3 {
+    color: var(--navy-950);
+    font-weight: 650;
+    letter-spacing: -0.035em;
+}
+
+/* Sidebar */
+
+section[data-testid="stSidebar"] {
+    background: var(--navy-950);
+    border-right: 1px solid #1E3348;
+}
+
+section[data-testid="stSidebar"] > div {
+    padding-top: 1.5rem;
+}
+
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h1,
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h2,
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h3 {
+    color: #E6EEF5;
+}
+
+section[data-testid="stSidebar"] hr {
+    border-color: #294055;
+}
+
+/* Sidebar navigation */
+
+section[data-testid="stSidebar"] [data-testid="stPageLink"] {
+    border-radius: 9px;
+    padding: 0.25rem 0.5rem;
+}
+
+section[data-testid="stSidebar"] [data-testid="stPageLink"]:hover {
+    background: #19344A;
+}
+
+/* Cards */
+
+.metric-card,
+.panel-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(11, 23, 38, 0.035);
+}
+
+.metric-label {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.metric-value {
+    color: var(--navy-950);
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-top: 0.35rem;
+}
+
+/* Hero section */
+
+.hero-card {
+    background: linear-gradient(
+        120deg,
+        var(--navy-950),
+        var(--navy-800)
+    );
+    border-radius: 18px;
+    padding: 2rem 2.2rem;
+    color: white;
+}
+
+.hero-card h1,
+.hero-card h2,
+.hero-card p {
+    color: white;
+}
+
+.hero-eyebrow {
+    color: #73DED0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+
+.stButton > button,
+.stFormSubmitButton > button {
+    background: var(--teal-600);
+    color: white;
+    border: 1px solid var(--teal-600);
+    border-radius: 9px;
+    min-height: 2.7rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover,
+.stFormSubmitButton > button:hover {
+    background: var(--navy-800);
+    color: white;
+    border-color: var(--navy-800);
+}
+
+/* Input fields */
+
+.stTextInput input,
+.stNumberInput input,
+.stDateInput input,
+.stSelectbox div[data-baseweb="select"] {
+    border-radius: 8px;
+}
+
+/* Dividers */
+
+hr {
+    border-color: var(--border);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Status labels */
+
+.status-success {
+    color: var(--success);
+    background: #E9F8F0;
+    padding: 0.35rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-warning {
+    color: #A66C12;
+    background: #FFF5DF;
+    padding: 0.35rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-danger {
+    color: var(--danger);
+    background: #FDECEC;
+    padding: 0.35rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Data tables and charts */
+
+[data-testid="stDataFrame"] {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+/* Responsive spacing */
+
+@media (max-width: 768px) {
+    .block-container {
+        padding: 1rem 1rem 2rem;
+    }
+
+    .hero-card {
+        padding: 1.4rem;
+    }
+}

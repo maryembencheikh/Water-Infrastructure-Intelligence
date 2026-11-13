@@ -19,7 +19,9 @@ catboost_info/
 
 # Datasets
 data/
-
+# Keep frontend category catalog
+!frontend/data/
+!frontend/data/category_options.json
 # Generated artifacts (keep production model)
 artifacts/*
 !artifacts/best_lgbm_pipeline_compatible.joblib
