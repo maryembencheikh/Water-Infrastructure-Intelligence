@@ -286,7 +286,7 @@ st.dataframe(
         "Component": [item[0] for item in architecture],
         "Technology": [item[1] for item in architecture]
     },
-    use_container_width=True,
+    width="stretch",
     hide_index=True
 )
 
@@ -318,7 +318,7 @@ with col1:
     st.link_button(
         "View GitHub Repository",
         "https://github.com/maryembencheikh/Water-Infrastructure-Intelligence",
-        use_container_width=True
+        width="stretch"
     )
 
 with col2:
@@ -338,7 +338,7 @@ with col2:
     st.link_button(
         "Explore API Documentation",
         "https://water-infrastructure-intelligence.onrender.com/docs",
-        use_container_width=True
+        width="stretch"
     )
 
 

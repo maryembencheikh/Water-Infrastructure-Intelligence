@@ -452,7 +452,7 @@ st.write("")
 submitted = st.button(
     "Generate Operational Status Prediction",
     type="primary",
-    use_container_width=True
+    width="stretch"
 )
 
 

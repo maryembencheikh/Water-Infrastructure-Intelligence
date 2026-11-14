@@ -150,7 +150,7 @@ for col in ["Precision", "Recall", "F1-score"]:
 
 st.dataframe(
     display_metrics,
-    use_container_width=True,
+    width="stretch",
     hide_index=True
 )
 
@@ -218,7 +218,7 @@ fig.update_yaxes(autorange="reversed")
 
 st.plotly_chart(
     fig,
-    use_container_width=True
+    width="stretch"
 )
 
 
@@ -296,7 +296,7 @@ parameters = {
 
 st.dataframe(
     pd.DataFrame(parameters),
-    use_container_width=True,
+    width=700,
     hide_index=True
 )
 

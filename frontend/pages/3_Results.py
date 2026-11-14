@@ -233,7 +233,7 @@ with chart_col1:
 
     st.plotly_chart(
         bar_chart,
-        use_container_width=True
+        width="stretch"
     )
 
 
@@ -285,7 +285,7 @@ with chart_col2:
 
     st.plotly_chart(
         donut_chart,
-        use_container_width=True
+        width="stretch"
     )
 
 
@@ -335,7 +335,7 @@ if payload:
 
         st.dataframe(
             summary_df,
-            use_container_width=True,
+            width="stretch",
             hide_index=True
         )
 
@@ -384,7 +384,7 @@ st.download_button(
     ),
     file_name=f"water_point_{waterpoint_id}_report.json",
     mime="application/json",
-    use_container_width=True
+    width="stretch"
 )
 
 

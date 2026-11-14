@@ -221,3 +221,8 @@ hr {
         padding: 1.4rem;
     }
 }
+.metric-value-compact {
+    font-size: 1.25rem !important;
+    white-space: nowrap;
+    letter-spacing: -0.02em;
+}
